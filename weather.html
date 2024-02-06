@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=Montserrat&family=Oxygen:wght@700&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="weather.css">
+    </script>
+</head>
+
+<body>
+    <div>
+        <div class="container">
+            <div class="left"><input type="text" id="locationInput" placeholder="Enter a city">
+                <button id="searchButton">Search</button>
+                <div id="alert"></div>
+            </div>
+            <div class="right">
+                <div class="information">
+                    <div class="temperature">
+                        <div id="temperature"></div>
+                        <sup id="degree">°</sup>
+                        <span id="celcius">C</span>
+                    </div>
+
+                    <div class="location">
+                        <div id="location"></div>
+                        <div id="extraInfo">
+                            <span id="min"></span>
+                            <sup>°</sup>
+                            <span> / </span>
+                            <span id="max"></span>
+                            <sup>°</sup>
+                            <span>Feels like</span>
+                            <span id="feelsLike"></span>
+                            <sup>°</sup>
+                        </div>
+                    </div>
+
+                    <div class="extraWeatherInfo">
+                        <div id="weather"></div>
+                        <div id="extraWeatherInfo">
+                            <div class="humidity">Humidity: <span id="humidity"></span></div>
+                            <div class="wind">Wind: <span id="wind"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+
+</html>

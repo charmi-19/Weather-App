@@ -1,0 +1,123 @@
+body {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oxygen', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    border-radius: 10px;
+    width: 75%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(weatherCard.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: auto;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.left {
+    background-color: rgb(71 85 105/0.7);
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.temperature {
+    display: flex;
+    align-items: center;
+}
+
+#temperature {
+    font-size: 96px;
+}
+
+#degree {
+    font-size: 72px;
+    align-self: flex-start;
+}
+#celcius {
+    font-size: 72px;
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#location {
+    font-size: 36px;
+}
+
+#weather {
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+#extraInfo {
+    font-size: 16px;
+}
+
+.extraWeatherInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#extraWeatherInfo {
+    font-size: 16px;
+}
+
+#alert {
+    visibility: hidden;
+    position: absolute;
+    bottom: 10px;
+}
+
+.right {
+    color: #fff;
+    width: 70%;
+    
+}
+
+.information {
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 0 10px;
+    width: 70%;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px 0 10px 10px;
+    margin: 10px 0;
+    border: 1px solid rgb(243, 244, 246);
+    border-radius: 5px;
+    background-color: transparent;
+    color: rgb(243, 244, 246);
+}
+
+button {
+    background-color: #fff;
+    color: rgb(217 119 6);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
